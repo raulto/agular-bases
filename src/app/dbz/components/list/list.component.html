@@ -1,0 +1,9 @@
+<h2>Listado</h2>
+<ul class="list-group">
+
+    <li *ngFor="let character of characterList, let i = index">
+        {{i+1}} - {{character.name}} - <strong>Power:</strong>{{character.power}} 
+        <button type="button" class="btn btn-danger d-flex justify-content-end"  (click)="deleteCharacter(character.uid)">Danger</button>
+    </li>
+
+</ul>
